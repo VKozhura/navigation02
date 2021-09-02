@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  min-width: 1366px;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: #0e1633;
+
+  background-color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  background-color: #fafafa;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.logo {
+  width: 60px;
+  flex-shrink: 0;
+  padding: 10px;
+  padding-left: 0;
+  margin-right: 28px;
+}
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 25px;
+}
+
+.nav-link {
+  color: inherit;
+  cursor: pointer;
+}
+
+.current {
+  font-weight: 600;
+  border-bottom: 1px solid #182454;
+}
+
+.user-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+
+  list-style: none;
+}
+
+.user-item {
+  margin-left: 20px;
+  color: #0e1633;
+  font-weight: 600;
+}
+
+.button {
+  display: block;
+  padding-top: 13px;
+  padding-right: 25px;
+  padding-bottom: 13px;
+
+  border: 1px solid #182454;
+  border-radius: 25px;
+  color: inherit;
+  text-align: center;
+}
+
+.button-outline {
+  position: relative;
+  padding-left: 57px;
+  background-color: inherit;
+}
+
+.button-outline::before {
+  content: "";
+
+  position: absolute;
+  background-image: url("img/cart_icon.svg");
+  width: 22px;
+  height: 20px;
+  left: 25px;
+}
+
+.button-filled {
+  position: relative;
+  padding-left: 54px;
+  background-color: #182454;
+  color: #fafafa;
+}
+
+.button-filled::before {
+  content: "";
+
+  position: absolute;
+  background-image: url("img/user_icon.svg");
+  width: 19px;
+  height: 20px;
+  left: 25px;
+}
